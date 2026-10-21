@@ -1,0 +1,125 @@
+/* ==========================================================
+   style.css - external stylesheet for registration.html
+   Colors match the other two pages:
+   teal #0f4c5c, dark teal #0a3641, amber #e8a33d, page #f5f7f8
+   ========================================================== */
+
+/* Element selector: styles every body, header, h1, h2, p, footer */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #1c2b2f;
+  background-color: #f5f7f8;
+}
+header {
+  background-color: #0f4c5c;
+  color: #ffffff;
+  padding: 32px 24px 20px;
+  text-align: center;
+}
+h1 { margin: 0; font-family: Georgia, "Times New Roman", serif; font-size: 2.4rem; }
+header p { margin: 6px 0 0; color: #f3c677; }
+h2 { font-family: Georgia, "Times New Roman", serif; color: #0f4c5c; }
+main { max-width: 760px; margin: 0 auto; padding: 32px 24px; }
+footer {
+  background-color: #0a3641;
+  color: #d5e4e8;
+  text-align: center;
+  padding: 20px 24px;
+  font-size: 0.95rem;
+}
+footer p { margin: 0 0 4px; }
+footer a { color: #f3c677; }
+
+/* Class selector: .site-nav is the navigation bar, .intro is the opening paragraph */
+.site-nav { background-color: #0a3641; padding: 12px 24px; text-align: center; }
+.site-nav a { color: #ffffff; text-decoration: none; margin: 0 14px; }
+.site-nav a.current { color: #f3c677; font-weight: bold; text-decoration: underline; }
+.intro { background-color: #fff4d9; border-left: 6px solid #e8a33d; padding: 12px 16px; }
+
+/* Hover feedback on links (also used on buttons below) */
+.site-nav a:hover { color: #f3c677; text-decoration: underline; }
+footer a:hover { color: #ffffff; }
+
+/* ID selector: #registration-form controls the form card itself */
+#registration-form {
+  background-color: #ffffff;
+  border: 1px solid #cfd8db;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Fieldsets and legends group related controls */
+fieldset {
+  border: 2px solid #0f4c5c;
+  border-radius: 6px;
+  margin: 0 0 24px;
+  padding: 12px 18px 8px;
+}
+legend { padding: 0 8px; font-weight: bold; color: #0f4c5c; }
+fieldset.inner-group { border: 1px dashed #5b6b70; margin: 8px 0 16px; }
+
+/* Labels and spacing */
+.field { margin-bottom: 16px; }
+label { display: block; font-weight: 600; margin-bottom: 4px; }
+label.choice { font-weight: normal; margin-bottom: 6px; }
+
+/* Inputs, dropdown and textarea share one base look */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+select,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #8a9a9f;
+  border-radius: 4px;
+  background-color: #ffffff;
+}
+
+/* Attribute selector: only the email input gets a thick teal border and tinted background */
+input[type="email"] {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 9px 12px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 2px solid #0f4c5c;
+  border-radius: 4px;
+  background-color: #eaf6f8;
+}
+
+/* Focus feedback: visible outline and warm background while typing */
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 3px solid #e8a33d;
+  outline-offset: 1px;
+  background-color: #fffaf0;
+  border-color: #0f4c5c;
+}
+
+/* Buttons */
+.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+button {
+  padding: 10px 24px;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  border: 2px solid #0f4c5c;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type="submit"] { background-color: #0f4c5c; color: #ffffff; }
+button[type="reset"] { background-color: #ffffff; color: #0f4c5c; }
+
+/* Hover feedback on buttons */
+button[type="submit"]:hover { background-color: #e8a33d; border-color: #e8a33d; color: #122b33; }
+button[type="reset"]:hover { background-color: #eaf1f3; }
+button:focus-visible { outline: 3px solid #e8a33d; outline-offset: 2px; }

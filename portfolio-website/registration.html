@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Inquiry | Muhammad Rohaan Arshad Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Muhammad Rohaan Arshad</h1>
+    <p>Project inquiry</p>
+  </header>
+
+  <nav class="site-nav">
+    <a href="index.html">Home</a>
+    <a href="information.html">Projects and Services</a>
+    <a href="registration.html" class="current">Project Inquiry</a>
+  </nav>
+
+  <main>
+    <h2>Tell me about your project</h2>
+    <p class="intro">Fill in the form below and I will reply with a plan and a quote. Fields marked with an asterisk (*) are required. This form is a front-end demo, so nothing is sent to a server.</p>
+
+    <form id="registration-form" action="#" method="get">
+
+      <fieldset>
+        <legend>Create your account</legend>
+
+        <div class="field">
+          <label for="full-name">Full name *</label>
+          <input type="text" id="full-name" name="full_name" placeholder="e.g. Malik Rohaan " required>
+        </div>
+
+        <div class="field">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" placeholder="name@gmail.com" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Password * (at least 8 characters)</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Project details</legend>
+
+        <div class="field">
+          <label for="age">Age (16 to 80)</label>
+          <input type="number" id="age" name="age" min="16" max="80">
+        </div>
+
+        <div class="field">
+          <label for="preferred-date">Preferred start date</label>
+          <input type="date" id="preferred-date" name="preferred_date">
+        </div>
+
+        <div class="field">
+          <label for="service">Service needed *</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>Select a service</option>
+            <option value="website">Personal website</option>
+            <option value="presentation">Presentation design</option>
+            <option value="video">Video advertisement edit</option>
+            <option value="resume">Resume and CV design</option>
+          </select>
+        </div>
+
+        <fieldset class="inner-group">
+          <legend>Preferred contact method</legend>
+          <label class="choice" for="contact-email"><input type="radio" id="contact-email" name="contact_method" value="email" checked> Email</label>
+          <label class="choice" for="contact-phone"><input type="radio" id="contact-phone" name="contact_method" value="phone"> Phone call</label>
+          <label class="choice" for="contact-chat"><input type="radio" id="contact-chat" name="contact_method" value="chat"> Chat message</label>
+        </fieldset>
+
+        <fieldset class="inner-group">
+          <legend>Extras I would like</legend>
+          <label class="choice" for="extra-revisions"><input type="checkbox" id="extra-revisions" name="extras" value="revisions"> Two extra revisions</label>
+          <label class="choice" for="extra-rush"><input type="checkbox" id="extra-rush" name="extras" value="rush"> Rush delivery</label>
+          <label class="choice" for="extra-source"><input type="checkbox" id="extra-source" name="extras" value="source"> Source files included</label>
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional information</legend>
+        <div class="field">
+          <label for="comments">Comments (up to 300 characters)</label>
+          <textarea id="comments" name="comments" rows="5" maxlength="300" placeholder="Describe your idea, audience and deadline."></textarea>
+        </div>
+      </fieldset>
+
+      <div class="actions">
+        <button type="submit">Send inquiry</button>
+        <button type="reset">Reset form</button>
+      </div>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contact: <a href="mailto:malikrohanarshad@gmail.com">malikrohanarshad@gmail.com</a></p>
+    <p>&copy; 2026 Muhammad Rohaan Arshad. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
